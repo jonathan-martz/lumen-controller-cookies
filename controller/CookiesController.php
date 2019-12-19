@@ -29,6 +29,7 @@ class CookiesController extends Controller
         $cookies = DB::table('cookies')->get();
 
         $this->addResult('cookies',$cookies);
+        $this->addMessage('success', 'Cookies loaded.');
 
         return $this->getResponse();
     }
