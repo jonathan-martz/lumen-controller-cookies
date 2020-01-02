@@ -12,6 +12,8 @@ use Illuminate\Validation\ValidationException;
 /**
  * Class CookiesController
  * @package App\Http\Controllers
+ * @todo create provider
+ * @todo add route.php
  */
 class CookiesController extends Controller
 {
