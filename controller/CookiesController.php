@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use \http\Env\Response;
+use http\Env\Response;
 use Illuminate\Http\JsonResponse;
-use \Illuminate\Http\Request;
-use \Illuminate\Support\Facades\DB;
-use \Illuminate\Support\Facades\Hash;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
 /**
@@ -28,7 +28,7 @@ class CookiesController extends Controller
 
         $cookies = DB::table('cookies')->get();
 
-        $this->addResult('cookies',$cookies);
+        $this->addResult('cookies', $cookies);
         $this->addMessage('success', 'Cookies loaded.');
 
         return $this->getResponse();
