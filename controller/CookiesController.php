@@ -24,13 +24,11 @@ class CookiesController extends Controller
      */
     public function select(Request $request)
     {
-        $validation = $this->validate($request, [
-
-        ]);
+        $validation = $this->validate($request, []);
 
         $cookies = DB::table('cookies')->get();
 
-        $this->addResult('cookies', $cookies);
+        $this->addData('cookies', $cookies);
         $this->addMessage('success', 'Cookies loaded.');
 
         return $this->getResponse();

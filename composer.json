@@ -8,7 +8,7 @@
     "illuminate/database": "^7.3",
     "illuminate/validation": "^7.3",
     "illuminate/support": "^7.3",
-    "jonathan-martz/lumen-controller": "^0.3"
+    "jonathan-martz/lumen-controller": "^0.4"
   },
   "autoload": {
     "classmap": [
